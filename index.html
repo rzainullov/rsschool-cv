@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>CURRICULUM VITAE</title>
+  <style>
+        main {
+            display: block;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            font-family:"Segoe UI",Helvetica,Arial,sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            }
+        h3 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+                }
+        section,
+        div {
+            display: block;
+            width: fit-content; 
+                }
+        .code {
+            padding: 20px;
+            line-height: normal;
+            background-color:#ceebe9;
+            }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <header>
+      <h1>CURRICULUM VITAE</h1>
+      <img src="https://i.imgur.com/nEzq3HE.jpg" alt="My photo" width="250" height="250">
+    </header>
+
+    <section class="name">
+      <h3 >First name,Last name:</h3> 
+      Rashid Zainullov
+    </section>
+
+    <section class="contacts">
+      <h3>Contacts:</h3> 71 Voroshilova
+      <br> Togliatti
+      <br> Russian Federation
+      <br> 445039
+      <br> tel: +79818579773
+      <br> e-mail: rashid.zainullov@outlook.com
+      <br>
+    </section>
+
+    <section class="summary">
+      <h3>Summary:</h3>
+      <p>Hello there. I’m Rashid. My goal on this moment is to learn general front-end technologies for farther professional activity in web development. In fact true goal is to come in another field where I was working and that diff so mach from previous and try to achieve certain results. it’s challenge for me!I had during last ten years about few approaches for learning programming languages however probably I just wasn’t to ready for that. I was worked recently in construction and automotive fields as safety engineer where my first responsibility was control executing of safety regulation.This safety regulations is full ambiguity that may lead for unambiguous consequences.Therefore I came out from safety in manufacturing but I would like to comeback as service supplier in safety. And programming are something definitely and accuracy, daily development of own creative possibilities.Especially web development is what it takes.</p>
+    </section>
+
+    <section class="skills">
+      <h3>Skills:</h3>
+      <ul>
+        <li>Basic Python;</li>
+        <li>Basic HTML;</li>
+        <li>Basic CSS;</li>
+        <li>Basic JS - in proceed.</li>
+      </ul>
+    </section>
+
+    <section class="code_instances">
+       <h3>Code examples:</h3>
+       <p><b>Example 1:</b> The main idea is to count all the occurring characters in a string. If you have a string like aba, then the result should be {‘a’: 2, ‘b’: 1}. What if the string is empty? Then the result should be empty object literal, {}.</p>
+       <p><b>Code:</b></p>
+       <div class="code">
+            <code>
+                        function count (string) { <br> 
+                            &ensp; let obj = {}; <br>
+                            &ensp; for(let i = 0; i &lt; string.length;i++) { <br> 
+                                &ensp;&ensp; obj[string[i]] ? obj[string[i]] += 1 : obj[string[i]] = 1;<br>
+                                &ensp; }<br>
+                                &ensp; return obj;<br>
+                        }
+            </code>
+        </div>
+      <p><b>Example 2:</b> Return an array containing the numbers from 1 to N, where N is the parametered value. N will never be less than 1 (in C#, N might be less than 1).</p>
+      <p>C# ONLY: If N is smaller than or equal to 0, throw an ArgumentOutOfRangeException! Replace certain values however if any of the following conditions are met:.</p>
+      <ul>
+        <li>If the value is a multiple of 3: use the value 'Fizz' instead;</li>
+        <li>If the value is a multiple of 5: use the value 'Buzz' instead;</li>
+        <li>If the value is a multiple of 3 & 5: use the value 'FizzBuzz' instead.</li>
+      </ul>
+      <p><b>Code:</b></p>
+      <div class="code">
+                    <code>
+                        function fizzbuzz(n){ <br>
+                            &nbsp; plet arr = []; <br>
+                            &nbsp; for(let i = 1; i &lt;= n ; i++) { <br>
+                                &nbsp;&nbsp;&nbsp;if(i % 3 === 0 && i % 5 !== 0 ) { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;arr.push('Fizz'); <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                                &nbsp;&nbsp; else if(i % 5 === 0 && i % 3 !== 0 ) { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;arr.push('Buzz'); <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                                &nbsp;&nbsp;&nbsp;if(i % 3 === 0 && i % 5 === 0 ) { <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; arr.push('FizzBuzz'); <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                                &nbsp;&nbsp;&nbsp; else{<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;arr.push(i);<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                                &nbsp;&ensp;}<br>
+                                &nbsp;return arr;<br>
+                        } <br>
+                    </code>
+    </div>  
+    </section>
+
+    <section class="education">
+      <h3>Education</h3>
+      <p>I have a diploma in safety engineering from Institute of Technical Systems of the St. Petersburg State Agrarian University.I have a certificate about passing on <a href="https://stepik.org/course/67/promo">stepik.org</a> of course ‘Programming on Python’ from Bioinformatic Intitute.Nowadays I’m learning HTML, CSS and JS and programming practices using different sources.</p>
+    </section>
+    <section class="eng">
+      <h3>English</h3>
+      <p>Nowadays I have <a href="https://www.efset.org/cert/kMRWZR">B1 Intermediate level</a>. My employers were foreign companies and therefore I got some experience in English.</p>
+    </section>
+  </main>
+</body>
+
+</html>
